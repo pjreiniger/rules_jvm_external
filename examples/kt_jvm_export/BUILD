@@ -10,7 +10,7 @@ load("@rules_jvm_external//:kt_defs.bzl", "kt_jvm_export")
 kt_jvm_export(
     name = "example-export",
     deploy_env = [
-        "@com_github_jetbrains_kotlin//:kotlin-stdlib",
+        "@io_bazel_rules_kotlin//kotlin/compiler:kotlin-stdlib",
     ],
     maven_coordinates = "com.example:bazel-example:0.0.1",
     runtime_deps = [
